@@ -4,7 +4,7 @@
         <div class="well">
             <div class="row">
                 <div class="alert alert-info">
-                    Bienvenido a Mi sistema
+                    Bienvenido a Mi plaforma de cocina
                 </div>
             </div>
         </div>
