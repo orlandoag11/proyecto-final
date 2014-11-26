@@ -1,0 +1,27 @@
+.navbar-fixed-top{
+	top: 50px ;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom{
+	position: fixed;
+    right: 0;
+    left: 389px;
+    z-index: 1030;
+
+}
+
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse{
+	margin-right: 0;
+    margin-left: -173px;
+}
+
+.container {
+padding-right: 210px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.letras{
+   top: 50px ;
+}

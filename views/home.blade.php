@@ -3,19 +3,14 @@
         <!-- Call to Action Section -->
         <div class="well">
             <div class="row">
-                <div class="alert alert-info">
-                    Bienvenido a Mi plataforma de cocina
-                </div>
             </div>
         </div>
-
-        <hr>
 
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; FOODSHOT 2014</p>
                 </div>
             </div>
         </footer>

@@ -1,4 +1,5 @@
     <!-- Navigation -->
+    
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,35 +10,36 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Pagina Bootstrap</a>
+                <a class="navbar-brand" href="index.html">FoodShot</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Carreras<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recetas Por Categoria<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?=getPublic();?>/carreras/agregar">Agregar Carrera</a></li>
-                            <li><a href="<?=getPublic();?>/carreras/lista">Ver Carrera</a></li>
+                            <li><a href="<?=getPublic();?>/carreras/agregar">Mexicanas</a></li>
+                            <li><a href="<?=getPublic();?>/carreras/lista">Italianas</a></li>
+                            <li><a href="<?=getPublic();?>/carreras/agregar">Francesas</a></li>
+                            <li><a href="<?=getPublic();?>/carreras/lista">Chinas</a></li>
+                            <li><a href="<?=getPublic();?>/carreras/agregar">Americanas</a></li>
+                            <li><a href="<?=getPublic();?>/carreras/lista">Japonesas</a></li>
+                            <li><a href="<?=getPublic();?>/carreras/lista">otras...</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alumnos<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?=getPublic();?>/alumnos/agregar">Agregar Alumnos</a></li>
-                            <li><a href="<?=getPublic();?>/alumnos/lista">Ver Alumnos</a></li>
-                        </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Videos</b></a>
                     </li> 
                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Escuelas<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?=getPublic();?>/escuelas/agregar">Agregar Escuelas</a></li>
-                            <li><a href="<?=getPublic();?>/escuelas/lista">Ver Escuelas</a></li>
-                        </ul>
-                    </li>                                                                             
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Iniciar session</b></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registrarse</a>
+                    </li>                                                                              
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+  <!-- /.container -->
     </nav>
+   
