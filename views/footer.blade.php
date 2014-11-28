@@ -4,11 +4,23 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?=getPublic();?>/js/bootstrap.min.js"></script>
+    
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.mensaje-timeout').fadeIn().delay(2000).fadeOut('slow');
 		});
+
 	</script>
 </body>
 
