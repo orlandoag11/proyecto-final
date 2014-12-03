@@ -9,20 +9,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Foodshoot</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?=getPublic();?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?=getPublic();?>/css/modern-business.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?=getPublic();?>/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="css/style.css">
-
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/style.css" rel="stylesheet">
+
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

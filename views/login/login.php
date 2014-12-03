@@ -1,4 +1,5 @@
-
+<?php include(ROOT . "/views/header.blade.php"); ?>
+    
     <div class="container">
       <form class="form-horizontal" role="form">
         <div class="form-group">
@@ -29,3 +30,4 @@
         </div>
       </form>
     </div>
+<?php include( ROOT . "/views/footer.blade.php"); ?>
