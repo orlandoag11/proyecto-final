@@ -1,6 +1,6 @@
 <?php include("header.blade.php"); ?>
-    <div class="container">
-   <header id="myCarousel" class="carousel slide">
+   <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,7 +32,9 @@
             <span class="icon-next"></span>
         </a>
     </header>
-    </div>
+
+
+
 
     <!-- Page Content -->
     <div class="container">

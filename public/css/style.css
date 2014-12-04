@@ -1,5 +1,15 @@
-.input-group {
-	width: 20%;
+.col-sm-offset-2 {
+margin-left: 43.666667%;
+}
+
+.col-sm-10 {
+width: 64.333333%;
+}
+
+.caja-buscar{
+	float: left;
+	width: 200px;
+	margin-top: 8px;
 }
 
 
