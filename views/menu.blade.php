@@ -53,7 +53,7 @@
                         <a href="<?=getPublic();?>/usuarios/login">Iniciar de Sesion</a>
                     </li>
                      <li>
-                        <a href="about.html">Registrarse</a>
+                        <a href="<?=getPublic();?>/usuarios/registrarse">Registrarse</a>
                     </li>
                    
                        
