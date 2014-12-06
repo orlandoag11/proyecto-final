@@ -1,9 +1,54 @@
+body {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+background-color: #f1f1f1;
+}
+
+
+.navbar-fixed-top {
+top: 0;
+border-width: 0 0 0px;
+}
+.form-group {
+margin-bottom: 23px;
+}
+
+h1, .h1 {
+font-size: 45px;
+color: black;
+}
+
+
+.container {
+	position: relative;
+	height: 100%;
+	text-align: center;
+	color: #000;
+
+}
+
+.panel-login {
+	max-width: 500px;
+	margin: 0 auto 20px;
+	border-radius: 8px;
+	border: 40px solid transparent;
+	background-color: #000;
+}
+
+.espacio-logo {
+	float;
+	width: 100%;
+	margin-top: 300px;
+}
+
 .col-sm-offset-2 {
-margin-left: 43.666667%;
+	margin-left: 15.666667%%;
 }
 
 .col-sm-10 {
-width: 64.333333%;
+	width: 64.333333%;
 }
 
 .caja-buscar{
@@ -12,4 +57,14 @@ width: 64.333333%;
 	margin-top: 8px;
 }
 
+.navbar-inverse {
+	background-color: #0FC885;
+	border-color: #080808;
+}
+.navbar-inverse .navbar-brand {
+	color: #FEF4FF;
+}
 
+.navbar-inverse .navbar-nav>li>a {
+color: #FEF4FF;
+}
