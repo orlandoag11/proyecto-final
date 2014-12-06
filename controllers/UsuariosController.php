@@ -13,7 +13,9 @@ class UsuariosController{
 function login(){		
 		view('login');
 	}
-
+function registrarse(){		
+		view('registrarse');
+	}
 
 	function lista(){		
 		$repo = new AlumnosRepo();
