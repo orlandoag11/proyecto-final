@@ -1,10 +1,14 @@
 <?php include("header.blade.php"); ?>
-<div class="container">
+<div class="container-login">
 
 <div class="espacio-logo">
+
 <h1>FoodShot</h1>
 <div class="panel-login">
     <form class="form-horizontal" role="form">
+    <div class="letras-log">
+    <h3>Iniciar Sesion</h3>
+    </div>
         <div class="form-group">
           <label for="inputEmail3" class="col-sm-2 control-label">Usuario</label>
             <div class="col-sm-10">
@@ -25,10 +29,9 @@
           <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default">Iniciar Sesion</button>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Registrarse</button>
+          <div class="pie-login">
+          <hr>
+          <p>No tienes cuenta?</p>
           </div>
         </div>
       </form>

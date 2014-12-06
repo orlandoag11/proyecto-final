@@ -7,19 +7,37 @@ background-color: #f1f1f1;
 }
 
 
+
+.pie-login{
+	padding: 70px;
+
+}
+
+.letras-log {
+	margin: 34px;
+}
 .navbar-fixed-top {
-top: 0;
-border-width: 0 0 0px;
+	top: 0;
+	border-width: 0 0 0px;
 }
 .form-group {
-margin-bottom: 23px;
+	margin-bottom: 23px;
 }
 
 h1, .h1 {
-font-size: 45px;
-color: black;
+	font-size: 45px;
+	color: black;
+	margin: 50px;
 }
 
+.container-login {
+	position: relative;
+	height: 100%;
+	text-align: center;
+	color: #000;
+	background: url(imagen/pescado.jpg);
+
+}
 
 .container {
 	position: relative;
@@ -31,16 +49,19 @@ color: black;
 
 .panel-login {
 	max-width: 500px;
+	max-height: 470px;
 	margin: 0 auto 20px;
 	border-radius: 8px;
 	border: 40px solid transparent;
-	background-color: #000;
+	background-color: #ffffff;
 }
 
 .espacio-logo {
 	float;
 	width: 100%;
-	margin-top: 300px;
+	margin-top: 100px;
+	background: url(imagen/pescado.jpg);
+
 }
 
 .col-sm-offset-2 {
@@ -58,7 +79,7 @@ color: black;
 }
 
 .navbar-inverse {
-	background-color: #0FC885;
+	background-color: #124559;
 	border-color: #080808;
 }
 .navbar-inverse .navbar-brand {

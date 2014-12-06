@@ -52,8 +52,9 @@
                         <h4><i class="fa fa-fw fa-check"></i>Recetas populares</h4>
                     </div>
                     <div class="panel-body">
+                    <h4>Pechugas Rellenas</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="<?=getPublic();?>/login/login" class="btn btn-default">Ver mas</a>
+                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-default">Ver mas</a>
                     </div>
                 </div>
             </div>
