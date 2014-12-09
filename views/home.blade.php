@@ -6,6 +6,8 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -20,6 +22,14 @@
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('img/brocheta.jpg');"></div>
+                
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/comida1.jpg');"></div>
+                
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/comida2.jpg');"></div>
                 
             </div>
         </div>
@@ -42,132 +52,107 @@
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
-                Ultimas Recetas
-                </h1>
+              <div class="receta">
+              <img width="577" height="68" src="<?=getPublic();?>/img/recetas.png"><div class="detalle">Populares</div>
+              </div>
             </div>
+            <div class="wrapper-home">
+            <div class="panel-home">
+      <h3><b>Recomendaciones</b></h3>
+      <img class="mac-home" src="<?=getPublic();?>/img/home.jpg" alt="">
+        Ensalada de Nochebuena
+      </div>
+      </div>
+     
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i>Recetas populares</h4>
-                    </div>
+                    <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
-                    <h4>Pechugas Rellenas</h4>
+                        <h4>Pechugas Rellenas</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-default">Ver mas</a>
+                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i>Recetas recientes</h4>
-                    </div>
+                    <img height="77" src="<?=getPublic();?>/img/tempura.jpg" class="img-circle">
                     <div class="panel-body">
+                        <h4>Tempura de ostion</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="about.html" class="btn btn-default">Ver mas</a>
+                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
+                    <div class="panel-body">
+                        <h4>Pechugas Rellenas</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper2-home">
+            <div class="panel2-home">
+      <h3><b>Recomendaciones</b></h3>
+      <img class="mac2-home" src="<?=getPublic();?>/img/home.jpg" alt="">
+        Ensalada de Nochebuena
+      </div>
+      </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
+                    <div class="panel-body">
+                        <h4>Pechugas Rellenas</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
+                    <div class="panel-body">
+                        <h4>Pechugas Rellenas</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i>Recetas rapidas</h4>
-                    </div>
+                    <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
+                        <h4>Pechugas Rellenas</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="about.html" class="btn btn-default">Ver mas</a>
+                        <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
             </div>
+            
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i>Recetas populares</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i>Recetas recientes</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i>Recetas rapidas</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i>Recetas populares</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i>Recetas recientes</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i>Recetas rapidas</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /.row -->
 
         <!-- Portfolio Section -->
        
 
-        <hr>
+        
     
         <!-- Call to Action Section -->
         
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; FOODSHOT 2014</p>
-                </div>
-            </div>
-        </footer>
+       
 
     </div>
+     <footer>
+            
+                    <p>Copyright &copy; FOODSHOT 2014</p>
+              
+            
+        </footer>
 <?php include("footer.blade.php"); ?>

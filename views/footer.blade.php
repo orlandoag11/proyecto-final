@@ -1,4 +1,5 @@
     <!-- /.container -->
+    
     <!-- jQuery Version 1.11.0 -->
     <script src="<?=getPublic();?>/js/jquery-1.11.0.js"></script>
     <script src="<?=getPublic();?>/js/jqBootstrapValidation.js"></script>

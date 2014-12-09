@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="">
+            <img width="70" height="48" src="<?=getPublic();?>/img/logo-chico.png" alt="">
                 <a class="navbar-brand" href="<?=getPublic();?>/">FoodShot</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,25 +29,25 @@
                         <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="portfolio-1-col.html">Mexicanas</a>
+                                <a href="#">Mexicanas</a>
                             </li>
                             <li>
-                                <a href="portfolio-2-col.html">Japonesas</a>
+                                <a href="#">Japonesas</a>
                             </li>
                             <li>
-                                <a href="portfolio-3-col.html">Chinas</a>
+                                <a href="#">Chinas</a>
                             </li>
                             <li>
-                                <a href="portfolio-4-col.html">Francesas</a>
+                                <a href="#">Francesas</a>
                             </li>
                             <li>
-                                <a href="portfolio-item.html">Italianas</a>
+                                <a href="#">Italianas</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dropdown">
                      <li>
-                        <a href="receta.html">Videos</a>
+                        <a href="#">Videos</a>
                     </li>
                       <li>
                         <a href="<?=getPublic();?>/usuarios/login">Iniciar de Sesion</a>
