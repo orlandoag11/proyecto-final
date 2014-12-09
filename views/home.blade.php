@@ -48,7 +48,7 @@
 
     <!-- Page Content -->
     <div class="container">
-
+       <div class="fondo">
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -134,6 +134,7 @@
                 </div>
             </div>
             
+        </div>
         </div>
         
         <!-- /.row -->

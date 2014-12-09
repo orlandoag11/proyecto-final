@@ -31,16 +31,16 @@ function registrarse(){
 
 	function guardar(){		
 
-		$alumno = new Alumno();
-		$alumno->setData($_POST);
+		$usuario = new Usuario();
+		$usuario->setData($_POST);
 
-		if($alumno->save()){
-			setSession('mensaje',"El alumno se agrego correctamente.");
-			redirect('alumnos/agregar');
+		if($usuario->save()){
+			setSession('mensaje',"La usuario se agrego correctamente.");
+			redirect('usuarios/registrarse');
 		}else{		
-			$errors = $alumno->errors;	
+			$errors = $usuario->errors;	
 			setSession('errores', $errors);
-			redirect('alumnos/agregar');
+			redirect('usuarios/registrarse');
 			//view('alumnos/agregar',compact('errors'));
 		}
 	}	

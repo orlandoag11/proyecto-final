@@ -8,16 +8,16 @@ class UsuariosRepo extends BaseRepo{
         return new Usuario();
     }    
 
-	function alumnos(){
+	function usuarios(){
 		$mysql = new DBMannager();
 		$mysql->connect();
 
-		$mysql->execute("SELECT * FROM alumnos");
+		$mysql->execute("SELECT * FROM usuarios");
 		$result = $mysql->getArray();
 
         return $this->arrayModel($result);
 	}
-
+  
 	
 
 }

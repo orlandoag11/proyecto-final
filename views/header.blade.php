@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Foodshoot</title>
-
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
     <link href="<?=getPublic();?>/css/bootstrap.min.css" rel="stylesheet">
 

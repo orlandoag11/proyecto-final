@@ -13,7 +13,7 @@ class CarrerasRepo extends BaseRepo{
 		$mysql = new DBMannager();
 		$mysql->connect();
 
-		$mysql->execute("SELECT * FROM carreras");
+		$mysql->execute("SELECT * FROM usuarios");
 		$result = $mysql->getArray();
 
         return $this->arrayModel($result);

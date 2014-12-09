@@ -1,10 +1,15 @@
 <?php include(ROOT . "/views/header.blade.php"); ?>
     <div class="container-registro">
+    <div class="container">
+    <div class="row">
 
+      <h1>Crear una Cuenta en Foodshot</h1>
 
+    </div>
 
-<h1>Crear una Cuenta en Foodshot</h1>
-<div class="panel-registro">
+     <div class="row">
+     <div class="column col-md-6 col-sm-12 col-xs-12">
+        <div class="panel-registro">
 <p class="registro">Completa los siguientes campos
    </p>
       <?php if(getSession('mensaje')){ ?>
@@ -21,29 +26,20 @@
         </div>
       <?php } ?>
         
-          <!-- 
+         
 
             <?php
-              if(isset($alumno)){
-                Form::open("post",getPublic()."/alumnos/actualizar",$alumno);   
-              }else{
-                Form::open("post",getPublic()."/alumnos/guardar");   
-              }              
-            ?>
-
-
-              <?php Form::field('select-opcional','carreras_id',NULL,$carreras); ?>  
+                Form::open("post",getPublic()."/usuarios/guardar");   
+                            
+            ?> 
                           
-                          
-              -->
-                          
-              <?php Form::field('text','nombre:'); ?>              
-              <?php Form::field('text','apellido_paterno:'); ?>
-               <?php Form::field('text','apellido_materno:'); ?>  
-                <?php Form::field('text','usuario:'); ?>  
-                 <?php Form::field('text','contrasena:'); ?>               
-              <?php Form::field('text','correo:'); ?>              
-              <?php Form::field('text','fecha_nacimiento:'); ?>
+              <?php Form::field('text','nombre'); ?>              
+              <?php Form::field('text','apellido_paterno'); ?>
+              <?php Form::field('text','apellido_materno'); ?>
+                <?php Form::field('text','usuario'); ?>  
+                 <?php Form::field('text','password'); ?>               
+                 <?php Form::field('text','profesiones_id'); ?>      
+            
               <div class="btn-guardar">           
               <button type="submit" class="btn btn-registro">Registrarse</button>
               </div>
@@ -54,6 +50,11 @@
             <?php Form::close(); ?>
         
     </div>
+     </div>
+
+
+      <div class="column col-md-6 col-sm-12 col-xs-12">
+        
     <div class="wrapper-texto">
       <h2>Solo necesitas una cuenta</h2>
         <img class="mac-imagen" src="<?=getPublic();?>/img/compu.png" alt="">
@@ -63,7 +64,13 @@
 
 Cambia de dispositivo y continúa desde la última acción que hayas realizado.
       </div>
+     </div>
+          
+     </div>
+
+
     
+    </div>
     </div>
 <?php include( ROOT . "/views/footer.blade.php"); ?>
 

@@ -5,7 +5,7 @@ class DBMannager
     var $server="localhost";
     var $username="root";
     var $password="";
-	var $database="desarrolloweb";
+	var $database="plataformaderecetas";
     var $db_selected;
     var $connection;   
 	var $result;
