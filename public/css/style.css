@@ -101,9 +101,34 @@ padding: 13px;
 
 */
 
+.wrapper2-home .tomate{
+	position: absolute;
+	top: 515px;
+	left: 82%;
+}
+.wrapper-home .rama{
+	position: absolute;
+	top: 45px;
+	left: 78%;
+
+}
+
+
+.logo{
+	vertical-align: middle;
+	float: left;
+
+}
+.puntuacion {
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: #FAFAEE;
+	border-radius: 4px;
+}
 
 .fondo{
-	background: url(imagen/fondohome.png);
+	background: url(imagen/fondob.png);
 }
 
 .navbar-brand{
@@ -113,14 +138,15 @@ padding: 13px;
 }
 
 .comentario{
-width: 12.666667%;
-float: left;
+	width: 12.666667%;
+	float: left;
+	margin-top: 7px;
 }
 
 .caja-comentar{
-	float: left;
 	width: 570px;
 	margin-top: 50px;
+	margin-left: 33px;
 
 }
 
@@ -150,13 +176,13 @@ margin-right: 574px;
 
 
 .wrapper2-home  .panel2-home {
-background-color: #fff;
+background-color: rgba(255, 255, 255, 0);
 border: 0px solid transparent;
 border-radius: 60px;
 -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
 box-shadow: 0 1px 1px rgba(0,0,0,.05);
 position: absolute;
-top: 600px;
+top: 698px;
 left: 910px;
 width: 245px;
 }
@@ -166,17 +192,18 @@ width: 245px;
 	position: absolute;
 	top: 80px;
 	left: 45px;
+	border-radius: 15px;
 }
 
 
 .wrapper-home  .panel-home {
-background-color: #fff;
+background-color: #rgba(255, 255, 255, 0);
 border: 0px solid transparent;
 border-radius: 60px;
 -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
 box-shadow: 0 1px 1px rgba(0,0,0,.05);
 position: absolute;
-top: 150px;
+top: 260px;
 left: 910px;
 width: 245px;
 }
@@ -186,6 +213,8 @@ width: 245px;
 	position: absolute;
 	top: 80px;
 	left: 45px;
+	border-radius: 15px;
+
 }
 
 
@@ -225,12 +254,7 @@ width: 245px;
 	padding: 15px;
 	float: left;
 }
-.row{
-	margin-right: 0px;
-	margin-left: 0px;
-	/*background: url(imagen/fondohome.png);*/
 
-}
 
 .panel-default {
 	border-color: #124559;
@@ -249,7 +273,7 @@ width: 245px;
 }
 
 .img-circle {
-   border-radius: 30%;
+   border-radius: 12%;
 	max-height: 100px;
 	max-width: 130px;
 }
@@ -264,7 +288,7 @@ width: 245px;
 .btn-home{
 	color: #FFFFFF;
 	background-color: #124559;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
 .container-registro {
@@ -327,7 +351,7 @@ width: 245px;
 	height: 100%;
 	text-align: center;
 	color: #000;
-	background: url(imagen/pescado.png);
+	background: url(imagen/Loginn.png);
 	background-position: center top;
 	padding-top: 100px;
 

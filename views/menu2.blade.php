@@ -16,6 +16,10 @@
            
                 <ul class="nav navbar-nav navbar-right">
                                                  
+                     <li class="dropdown">
+                     <li>
+                        <a href="#">Home</a>
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recetas por categoria 
                         <b class="caret"></b></a>
@@ -37,18 +41,32 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
                      <li>
-                        <a href="#">Videos</a>
+                        <a href="#">Seguidores</a>
                     </li>
                       <li>
-                        <a href="<?=getPublic();?>/usuarios/login">Iniciar de Sesion</a>
-                    </li>
-                    <li>
-                        <a href="<?=getPublic();?>/usuarios/registrarse">Registrarse</a>
+                        <a href="#">Siguiendo</a>
                     </li>
                    
                        
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil
+                        <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        <li>
+                                <a href="#">Ver Perfil</a>
+                            </li>
+                            <li>
+                                <a href="<?=getPublic();?>/recetas/subireceta">Subir Receta</a>
+                            </li>
+                            <li>
+                                <a href="#">Configuraciones</a>
+                            </li>
+                            <li>
+                                <a href="#">Cerrar sesion</a>
+                            </li>
+                        </ul>
                     </li>
                         </ul>
                     </li>

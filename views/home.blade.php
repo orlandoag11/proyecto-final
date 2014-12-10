@@ -45,10 +45,10 @@
 
 
 
-
+<div class="fondo">
     <!-- Page Content -->
     <div class="container">
-       <div class="fondo">
+       
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -57,7 +57,9 @@
               </div>
             </div>
             <div class="wrapper-home">
+            <img class="rama" src="<?=getPublic();?>/img/imagen.png" alt="">
             <div class="panel-home">
+
       <h3><b>Recomendaciones</b></h3>
       <img class="mac-home" src="<?=getPublic();?>/img/home.jpg" alt="">
         Ensalada de Nochebuena
@@ -96,6 +98,7 @@
                 </div>
             </div>
             <div class="wrapper2-home">
+            <img class="tomate" width="156" height="139" src="<?=getPublic();?>/img/tomate.png" alt="">
             <div class="panel2-home">
       <h3><b>Recomendaciones</b></h3>
       <img class="mac2-home" src="<?=getPublic();?>/img/home.jpg" alt="">
@@ -136,24 +139,9 @@
             
         </div>
         </div>
+         </div>
         
-        <!-- /.row -->
+           
+             
 
-        <!-- Portfolio Section -->
-       
-
-        
-    
-        <!-- Call to Action Section -->
-        
-        <!-- Footer -->
-       
-
-    </div>
-     <footer>
-            
-                    <p>Copyright &copy; FOODSHOT 2014</p>
-              
-            
-        </footer>
 <?php include("footer.blade.php"); ?>

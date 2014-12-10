@@ -72,7 +72,7 @@ Cambia de dispositivo y continúa desde la última acción que hayas realizado.
     
     </div>
     </div>
-<?php include( ROOT . "/views/footer.blade.php"); ?>
+
 
 
 

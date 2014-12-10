@@ -2,7 +2,7 @@
 <div class="container-login">
 
 
-
+<!--<img width="280" height="220" src="<?=getPublic();?>/img/logo2.png" alt="">-->
 <h1>FoodShot</h1>
 <div class="panel-login">
     <form class="form-horizontal" role="form">
@@ -38,4 +38,3 @@
       </div>
       
 </div> 
-<?php include("footer.blade.php"); ?>

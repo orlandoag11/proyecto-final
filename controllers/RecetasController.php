@@ -13,7 +13,9 @@ class RecetasController{
 function receta(){		
 		view('receta');
 	}
-
+function subireceta(){		
+		view('subireceta');
+	}
 
 	function lista(){		
 		$repo = new AlumnosRepo();

@@ -1,5 +1,9 @@
     <!-- /.container -->
-    
+                 <div class="column col-md-6 col-sm-12 col-xs-12">
+                 <p>Copyright &copy; FOODSHOT 2014</p>
+                     
+                 </div>
+  
     <!-- jQuery Version 1.11.0 -->
     <script src="<?=getPublic();?>/js/jquery-1.11.0.js"></script>
     <script src="<?=getPublic();?>/js/jqBootstrapValidation.js"></script>
