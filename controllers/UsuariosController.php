@@ -9,9 +9,30 @@ class UsuariosController{
 	function __construct() {
 		
 	}
-
+ 
 function login(){		
 		view('login');
+	}
+
+	function loginpost(){
+		$correo = $_POST ["correo"];
+		$password = $_POST ["password"];
+		$repo = new UsuariosRepo();//enviar valores
+		$usuario = $repo->login($correo,$password);
+        
+		if($usuario==true){
+			setSession('mensaje',"El usuario ingreso correctamente.");
+			redirect('');
+		}else{		
+			$errors = ["El usuario es Incorrecto."];	
+			setSession('errores', $errors);
+			redirect('');
+		}
+	}
+   
+	public function logout(){
+		session_destroy();
+		redirect('usuarios/login');
 	}
 function registrarse(){		
 		view('registrarse');

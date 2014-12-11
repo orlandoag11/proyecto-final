@@ -11,7 +11,7 @@ class Usuario extends BaseModel{
 		'apellido_paterno'  => 'required',
 		'apellido_materno'  => '',
 		
-		'usuario'  => 'required',
+		'correo'  => 'required',
 		'password'  => 'required',
 		'profesiones_id'  => 'required',
 		

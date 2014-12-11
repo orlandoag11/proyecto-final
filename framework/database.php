@@ -3,7 +3,7 @@
 	$server = "localhost";
 	$user = "root";
 	$password = "";
-	$database = "desarrolloweb";
+	$database = "plataformaderecetas";
 
 	function conectar(){
 

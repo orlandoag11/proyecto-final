@@ -1,6 +1,6 @@
 <?php
 
-require_once("BaseRepo.php");
+include("BaseRepo.php");
 
 class UsuariosRepo extends BaseRepo{
 
@@ -8,16 +8,24 @@ class UsuariosRepo extends BaseRepo{
         return new Usuario();
     }    
 
-	function usuarios(){
-		$mysql = new DBMannager();
-		$mysql->connect();
+    function login($correo, $password){
 
-		$mysql->execute("SELECT * FROM usuarios");
-		$result = $mysql->getArray();
+    	$mysql = new DBMannager();
+    	$mysql->connect();
 
-        return $this->arrayModel($result);
-	}
-  
-	
+    	$query="SELECT * FROM usuarios WHERe correo=? AND password=?";
+
+    	$mysql->execute($query, array($correo , $password));
+
+    	 if($mysql->count() == 1){
+             $usuario = $mysql->getRow();
+             setSession("id", $usuario['id']);
+              
+             return true;
+        }else{
+            return false;
+    }
+
+    }
 
 }

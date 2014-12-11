@@ -332,11 +332,12 @@ width: 245px;
 
 .pie-login{
 	padding: 70px;
-
+	margin-top: 140px;
 }
 
 .letras-log {
 	margin: 34px;
+	color: white;
 }
 .navbar-fixed-top {
 	top: 0;
@@ -344,6 +345,7 @@ width: 245px;
 }
 .form-group {
 	margin-bottom: 23px;
+	color: white;
 }
 
 .container-login {

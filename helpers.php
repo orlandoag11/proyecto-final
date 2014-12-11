@@ -3,6 +3,9 @@
 function getPublic(){
 	return URL;
 }
+/*function getPage(){
+	return $_GET['url'];
+}*/
 
 function view($template, $vars = array())
 {
@@ -48,4 +51,3 @@ function getAndRemoveSession($varname)
 	unset($_SESSION[$varname]);
 	return $value;
 }
-

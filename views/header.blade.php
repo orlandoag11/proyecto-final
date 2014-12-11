@@ -34,4 +34,8 @@
 
 <body>
 
-	<?php include( ROOT . "/views/menu.blade.php"); ?>
+	<?php if (getSession("id")){?>
+      <?php include( ROOT . "/views/menu2.blade.php"); ?>
+    <?php }else{ ?>
+      <?php include( ROOT . "/views/menu.blade.php"); ?>
+    <?php } ?>

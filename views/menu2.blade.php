@@ -64,7 +64,7 @@
                                 <a href="#">Configuraciones</a>
                             </li>
                             <li>
-                                <a href="#">Cerrar sesion</a>
+                                <a href="<?=getPublic();?>/usuarios/logout">Cerrar sesion</a>
                             </li>
                         </ul>
                     </li>
