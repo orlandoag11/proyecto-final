@@ -8,11 +8,11 @@ class RecetasRepo extends BaseRepo{
         return new Receta();
     }    
 
-	function alumnos(){
+	function recetas(){
 		$mysql = new DBMannager();
 		$mysql->connect();
 
-		$mysql->execute("SELECT * FROM alumnos");
+		$mysql->execute("SELECT * FROM recetas");
 		$result = $mysql->getArray();
 
         return $this->arrayModel($result);

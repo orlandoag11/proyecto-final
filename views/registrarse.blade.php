@@ -37,7 +37,7 @@
               <?php Form::field('text','apellido_paterno'); ?>
               <?php Form::field('text','apellido_materno'); ?>
                 <?php Form::field('text','correo'); ?>  
-                 <?php Form::field('text','password'); ?>               
+                 <?php Form::field('password','password'); ?>               
                  <?php Form::field('text','profesiones_id'); ?>      
             
               <div class="btn-guardar">           

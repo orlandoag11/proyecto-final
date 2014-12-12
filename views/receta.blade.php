@@ -48,3 +48,4 @@
 
     </div>
     </div>
+    <?php include("footer.blade.php"); ?>

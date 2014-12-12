@@ -24,7 +24,6 @@
                                 <td><?php echo $alumno->apellido_paterno; ?></td>
                                 <td><?php echo $alumno->apellido_materno; ?></td>
                                 <td>
-                                    <a href="<?=getPublic();?>/alumnos/modificar/<?=$alumno->id;?>">Modificar</a>
                                     <a href="<?=getPublic();?>/alumnos/eliminar/<?=$alumno->id;?>">Eliminar</a>
                                 </td>
                             </tr>

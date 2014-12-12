@@ -4,20 +4,18 @@ require_once("BaseModel.php");
 
 class Receta extends BaseModel{
 
-	public $table = "usuarios";
+	public $table = "recetas";
 
 	protected $fields = array(
 		'nombre' 			=> 'required',
-		'apellido_paterno'  => 'required',
-		'apellido_materno'  => '',
-		'fecha_nacimiento'  => 'required',
-		'sexo'  => 'required',
-		'usuario'  => 'required',
-		'password'  => 'required',
-		'correo'  => 'required',
-		'profesion'  => '',
+		'descripcion'  => '',
+		'porciones'  => 'required',
+		'tiempo_preparacion'  => '',
+		'tiempo_coccion'  => '',
 		'foto'  => '',
-		'profesiones_id'  => '',
+		'ingredientes'  => 'required',
+		'instrucciones'  => '',
+		'categorias_id'  => 'required',
 	);	
 
 	protected $custom_fields = array(
@@ -25,7 +23,7 @@ class Receta extends BaseModel{
 	);
 
 	public function prepareData($data){
-		$data['nombre_completo'] = $data['nombre']." ".$data['apellido_paterno']." ".$data['apellido_materno'];
+		$data['nombre'];
 		return $data;
 	}
 	

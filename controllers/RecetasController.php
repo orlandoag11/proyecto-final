@@ -18,9 +18,9 @@ function subireceta(){
 	}
 
 	function lista(){		
-		$repo = new AlumnosRepo();
-		$alumnos = $repo->alumnos();
-		view('alumnos/lista',compact('alumnos'));
+		$repo = new RecetasRepo();
+		$recetas = $repo->recetas();
+		view('recetas/lista',compact('recetas'));
 	}
 
 	function agregar(){
@@ -31,16 +31,16 @@ function subireceta(){
 
 	function guardar(){		
 
-		$alumno = new Alumno();
-		$alumno->setData($_POST);
+		$receta = new Receta();
+		$receta->setData($_POST);
 
-		if($alumno->save()){
-			setSession('mensaje',"El alumno se agrego correctamente.");
-			redirect('alumnos/agregar');
+		if($receta->save()){
+			setSession('mensaje',"la receta se agrego correctamente.");
+			redirect('recetas/subireceta');
 		}else{		
-			$errors = $alumno->errors;	
+			$errors = $receta->errors;	
 			setSession('errores', $errors);
-			redirect('alumnos/agregar');
+			redirect('recetas/subireceta');
 			//view('alumnos/agregar',compact('errors'));
 		}
 	}	

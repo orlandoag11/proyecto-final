@@ -7,6 +7,19 @@
 <div class="panel-login">
     <div class="form-horizontal">
     <div class="letras-log">
+<?php if(getSession('mensaje')){ ?>
+        <div class="alert alert-success mensaje-timeout"><?=getAndRemoveSession('mensaje');?></div>
+      <?php } ?>
+      <?php 
+        if(getSession('errores')){
+          $errors = getAndRemoveSession('errores');
+      ?>
+        <div class="alert alert-danger">
+          <?php foreach($errors as $error){ ?>
+            <p><?=$error;?></p> 
+          <?php } ?>
+        </div>
+      <?php } ?>
     <h3>Iniciar Sesion</h3>
     </div>
         <div class="form-group">
@@ -15,7 +28,7 @@
                 Form::open("post",getPublic()."/usuarios/loginpost");  
             ?>
               <?php Form::field('text','correo'); ?>  
-              <?php Form::field('text','password'); ?>                           
+              <?php Form::field('password','password'); ?>                           
                 <button type="submit" class="btn btn-default">Iniciar sesion</button>
               <?php Form::close(); ?>
           </div>

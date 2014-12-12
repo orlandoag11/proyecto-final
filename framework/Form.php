@@ -41,10 +41,14 @@ class Form{
 		switch($tipo){
 			case 'text': view('fields/text',compact('campo','texto','value'));
 						break;
+			case 'password': view('fields/password',compact('campo','texto','value'));
+						break;
 			case 'select': view('fields/select',compact('campo','texto','value','opciones'));
 						break;
 			case 'select-opcional': view('fields/select_opcional',compact('campo','texto','value','opciones'));
-						break;						
+						break;	
+			case 'file': view('fields/file',compact('campo','texto','value'));
+						break;											
 			default: 
 				return "Error";
 		}

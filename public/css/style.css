@@ -12,7 +12,9 @@ p.registro {
 h1, .h1{
 font-family: 'Great Vibes', cursive;
 font-size: 70px;
+margin-top: -30px;
 }
+
 
 /*
 
@@ -217,6 +219,16 @@ width: 245px;
 
 }
 
+.wrapper-texto-rec {
+	font-size: 50px;
+	display: inline-block;
+	vertical-align: top;
+	width: 440px;
+	margin-left: 210px;
+	margin-top: 70px;
+	color: #000;
+	font-family: 'Great Vibes', cursive;
+}
 
 .wrapper-imagen {
 	display: inline-block;
@@ -236,6 +248,11 @@ width: 245px;
 	color: #fff;
 }
 
+.wrapper-texto-rec .mac-rec {
+	position: absolute;
+	top: 150px;
+	left: 135px;
+}
 .wrapper-texto .mac-imagen {
 	position: absolute;
 	top: 150px;
@@ -291,6 +308,17 @@ width: 245px;
 	border-radius: 8px;
 }
 
+.container-subir-receta{
+	position: relative;
+	height: 120%;
+	text-align: center;
+	color: #fff;
+	background: url(imagen/fondob.png);
+	background-position: center top;
+	padding-top: 50px;
+
+}
+
 .container-registro {
 	position: relative;
 	height: 120%;
@@ -301,12 +329,35 @@ width: 245px;
 	padding-top: 50px;
 }
 
+
+
+.btn-receta{
+	color: #333;
+	background-color: #FDFDFD;
+	border-radius: 7px;
+	padding: 5px 80px;
+	margin-left: 180px;
+}
 .btn-registro{
 	color: #333;
 	background-color: #FDFDFD;
 	border-radius: 8px;
 	padding: 5px 150px;
 }
+
+.panel-receta {
+text-align: left;
+float: left;
+color: white;
+width: 690px;
+max-height: 900px;
+margin: 0 auto 26px;
+border-radius: 50px;
+border: 40px solid transparent;
+background-color: rgba(18, 69, 89, 1);
+}
+
+
 .panel-registro {
 	text-align: left;
 	float: left;
@@ -336,7 +387,7 @@ width: 245px;
 }
 
 .letras-log {
-	margin: 34px;
+	margin: 20px;
 	color: white;
 }
 .navbar-fixed-top {

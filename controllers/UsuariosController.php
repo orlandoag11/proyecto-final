@@ -21,12 +21,12 @@ function login(){
 		$usuario = $repo->login($correo,$password);
         
 		if($usuario==true){
-			setSession('mensaje',"El usuario ingreso correctamente.");
+			setSession('mensaje',"BIENVENIDO");
 			redirect('');
 		}else{		
-			$errors = ["El usuario es Incorrecto."];	
+			$errors = ["El usuario o password es Incorrecto."];	
 			setSession('errores', $errors);
-			redirect('');
+			redirect('usuarios/login');
 		}
 	}
    
@@ -56,7 +56,7 @@ function registrarse(){
 		$usuario->setData($_POST);
 
 		if($usuario->save()){
-			setSession('mensaje',"La usuario se agrego correctamente.");
+			setSession('mensaje',"La usuario se Registro correctamente.");
 			redirect('usuarios/registrarse');
 		}else{		
 			$errors = $usuario->errors;	
