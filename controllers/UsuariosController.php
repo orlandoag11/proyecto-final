@@ -6,18 +6,19 @@ include ROOT . "/repositories/UsuariosRepo.php";
 
 class UsuariosController{
 
-	function __construct() {
-		
-	}
  
 function login(){		
 		view('login');
 	}
+	
 
 	function loginpost(){
+		$datos = $_POST;
 		$correo = $_POST ["correo"];
 		$password = $_POST ["password"];
+
 		$repo = new UsuariosRepo();//enviar valores
+		
 		$usuario = $repo->login($correo,$password);
         
 		if($usuario==true){
@@ -37,19 +38,6 @@ function login(){
 function registrarse(){		
 		view('registrarse');
 	}
-
-	function lista(){		
-		$repo = new AlumnosRepo();
-		$alumnos = $repo->alumnos();
-		view('alumnos/lista',compact('alumnos'));
-	}
-
-	function agregar(){
-		$repo = new CarrerasRepo();
-		$carreras = $repo->lista();
-		view('alumnos/agregar', compact('carreras'));
-	}
-
 	function guardar(){		
 
 		$usuario = new Usuario();
@@ -66,40 +54,42 @@ function registrarse(){
 		}
 	}	
 
-	function modificar($id){
-		$repo = new AlumnosRepo();
-		$alumno = $repo->find($id);
-		$repoCarrera = new CarrerasRepo();
-		$carreras = $repoCarrera->lista();
-		view('alumnos/agregar',compact('alumno','carreras')); 
+	public function perfil(){
+		$repo = new UsuariosRepo();
+		$usuario = $repo->find(getSession('id'));
+		//var_dump($usuario);
+		view('perfil',compact('usuario'));
 	}
 
-	function actualizar($id){
-		$repo = new AlumnosRepo();
-		$alumno = $repo->find($id);		
-		$alumno->setData($_POST);
+	public function actualizaPerfil(){
+		//var_dump(getSession('id'));die();
+		$repo = new UsuariosRepo();
+		$usuario = $repo->find(getSession('id'));	
 
-		if($alumno->save()){
-			setSession('mensaje',"El alumno se actualizado correctamente.");
-			redirect('alumnos/modificar/'.$id);
-		}else{		
-			$errors = $alumno->errors;	
-			setSession('errores', $errors);
-			redirect('alumnos/modificar/'.$id);
-			//view('alumnos/agregar',compact('errors'));
+		$usuario->setData($_POST);
+		$archivoCargado=true;
+
+		if(isset($_FILES['foto']) && strlen($_FILES['foto']['name'])>0){
+			$archivoCargado=$repo->uploadImage($_FILES, 'foto','perfil.jpg');	
 		}
+		
+			
+		if($usuario->save() && $archivoCargado === TRUE){
+			setSession('mensaje',"El perfil se actualizado correctamente.");
+			redirect('');
+		}else{		
+			$errors = $usuario->errors;	
+			if($archivoCargado !== TRUE){
+				array_push($errors, $archivoCargado);
+			}			
+			
+			setSession('errores', $errors);
+			redirect('usuarios/perfil');
+			//view('alumnos/agregar',compact('errors'));
+		}		
 
 	}
-
-	function eliminar($id){
-
-		$repo = new AlumnosRepo();
-		$alumno = $repo->find($id);
-
-		$alumno->delete();			
-		setSession('mensaje',"El alumno se ha eliminado correctamente.");
-		redirect('alumnos/lista');
-	}
+	
 }
 
 

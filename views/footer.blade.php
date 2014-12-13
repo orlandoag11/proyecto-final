@@ -1,6 +1,6 @@
     <!-- /.container -->
                  <div class="column col-md-6 col-sm-12 col-xs-12">
-                 <p>Copyright &copy; FOODSHOT 2014</p>
+                        <p>Copyright &copy; FOODSHOT 2014</p>
                      
                  </div>
   

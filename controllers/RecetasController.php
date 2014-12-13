@@ -9,19 +9,56 @@ class RecetasController{
 	function __construct() {
 		
 	}
-
 function receta(){		
 		view('receta');
 	}
+
+
 function subireceta(){		
 		view('subireceta');
 	}
-
-	function lista(){		
+function lista(){		
 		$repo = new RecetasRepo();
 		$recetas = $repo->recetas();
 		view('recetas/lista',compact('recetas'));
+	
 	}
+	public function actualizaLista(){
+		$repo = new RecetasRepo();
+		$receta = $repo->find(getSession('id'));	
+
+		$usuario->setData($_POST);
+		$archivoCargado=true;
+
+		if(isset($_FILES['foto']) && strlen($_FILES['foto']['name'])>0){
+			$archivoCargado=$repo->uploadImage($_FILES, 'foto','receta.jpg');	
+		}
+		
+			
+		if($usuario->save() && $archivoCargado === TRUE){
+			setSession('mensaje',"La receta se actualizado correctamente.");
+			redirect('recetas/lista');
+		}else{		
+			$errors = $receta->errors;	
+			if($archivoCargado !== TRUE){
+				array_push($errors, $archivoCargado);
+			}			
+			
+			setSession('errores', $errors);
+			redirect('recetas/lista');
+			//view('alumnos/agregar',compact('errors'));
+		}		
+
+	}
+	
+
+
+
+	//function lista(){		
+		//$repo = new RecetasRepo();
+		////$recetas = $repo->recetas();
+		//view('recetas/lista',compact('recetas'));
+	//}
 
 	function agregar(){
 		$repo = new CarrerasRepo();
@@ -80,5 +117,6 @@ function subireceta(){
 		redirect('alumnos/lista');
 	}
 }
+ 
 
 

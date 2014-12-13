@@ -53,35 +53,34 @@
         <div class="row">
             <div class="col-lg-12">
               <div class="receta">
-              <img width="577" height="68" src="<?=getPublic();?>/img/recetas.png"><div class="detalle">Populares</div>
+                <img width="577" height="68" src="<?=getPublic();?>/img/recetas.png"><div class="detalle">Recetas Populares</div>
               </div>
             </div>
             <div class="wrapper-home">
-            <img class="rama" src="<?=getPublic();?>/img/imagen.png" alt="">
-            <div class="panel-home">
-
-      <h3><b>Recomendaciones</b></h3>
-      <img class="mac-home" src="<?=getPublic();?>/img/home.jpg" alt="">
-        Ensalada de Nochebuena
-      </div>
-      </div>
+                    <img class="rama" src="<?=getPublic();?>/img/imagen.png" alt="">
+                    <div class="panel-home">
+                        <h3><b>Recomendaciones</b></h3>
+                        <img class="mac-home" src="<?=getPublic();?>/img/home.jpg" alt="">
+                        Ensalada de Nochebuena
+                     </div>
+             </div>
      
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
                         <h4>Pechugas Rellenas</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Un rico plato con una gran combinación de sabores es el que nos proporciona la pechuga de pollo rellena. Es un plato muy completo que gusta a grandes y pequeños, y como es fácil de elaborar seguro que repites.</p>
                         <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
-                    <img height="77" src="<?=getPublic();?>/img/tempura.jpg" class="img-circle">
+                    <img height="77" src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
-                        <h4>Tempura de ostion</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <h4>Pechugas Rellenas</h4>
+                        <p>Un rico plato con una gran combinación de sabores es el que nos proporciona la pechuga de pollo rellena. Es un plato muy completo que gusta a grandes y pequeños, y como es fácil de elaborar seguro que repites.</p>
                         <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
@@ -92,25 +91,25 @@
                     <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
                         <h4>Pechugas Rellenas</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Un rico plato con una gran combinación de sabores es el que nos proporciona la pechuga de pollo rellena. Es un plato muy completo que gusta a grandes y pequeños, y como es fácil de elaborar seguro que repites.</p>
                         <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
             </div>
             <div class="wrapper2-home">
-            <img class="tomate" width="156" height="139" src="<?=getPublic();?>/img/tomate.png" alt="">
-            <div class="panel2-home">
-      <h3><b>Recomendaciones</b></h3>
-      <img class="mac2-home" src="<?=getPublic();?>/img/home.jpg" alt="">
-        Ensalada de Nochebuena
-      </div>
-      </div>
+                <img class="tomate" width="156" height="139" src="<?=getPublic();?>/img/tomate.png" alt="">
+                <div class="panel2-home">
+                    <h3><b>Recomendaciones</b></h3>
+                    <img class="mac2-home" src="<?=getPublic();?>/img/home.jpg" alt="">
+                    Ensalada de Nochebuena
+                 </div>
+            </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
                         <h4>Pechugas Rellenas</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Un rico plato con una gran combinación de sabores es el que nos proporciona la pechuga de pollo rellena. Es un plato muy completo que gusta a grandes y pequeños, y como es fácil de elaborar seguro que repites.</p>
                         <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
@@ -121,7 +120,7 @@
                     <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
                         <h4>Pechugas Rellenas</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Un rico plato con una gran combinación de sabores es el que nos proporciona la pechuga de pollo rellena. Es un plato muy completo que gusta a grandes y pequeños, y como es fácil de elaborar seguro que repites.</p>
                         <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
@@ -131,15 +130,15 @@
                     <img src="<?=getPublic();?>/img/pechuga.png" class="img-circle">
                     <div class="panel-body">
                         <h4>Pechugas Rellenas</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <p>Un rico plato con una gran combinación de sabores es el que nos proporciona la pechuga de pollo rellena. Es un plato muy completo que gusta a grandes y pequeños, y como es fácil de elaborar seguro que repites.</p>
                         <a href="<?=getPublic();?>/recetas/receta" class="btn btn-home">Ver mas</a>
                     </div>
                 </div>
             </div>
             
         </div>
-        </div>
-         </div>
+    </div>
+ </div>
         
            
              

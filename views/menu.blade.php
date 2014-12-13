@@ -21,7 +21,7 @@
                         <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">Mexicanas</a>
+                                <a href="<?=getPublic();?>/recetas/lista">Mexicanas</a>
                             </li>
                             <li>
                                 <a href="#">Japonesas</a>
@@ -38,9 +38,6 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                     <li>
-                        <a href="#">Videos</a>
-                    </li>
                       <li>
                         <a href="<?=getPublic();?>/usuarios/login">Iniciar de Sesion</a>
                     </li>

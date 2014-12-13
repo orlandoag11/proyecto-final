@@ -18,7 +18,7 @@
                                                  
                      <li class="dropdown">
                      <li>
-                        <a href="#">Home</a>
+                        <a href="<?=getPublic();?>/">Home</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recetas por categoria 
@@ -47,30 +47,28 @@
                       <li>
                         <a href="#">Siguiendo</a>
                     </li>
-                   
-                       
+                     
+                    <li class="menu-perfil">
+                     <a href="<?=getPublic();?>/usuarios/perfil"><img src="<?=getPublic();?>/uploads/<?=getSession('id');?>/perfil.jpg" alt=""><?=getSession('nombre');?></a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perfil
+                   <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
                         <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                        <li>
-                                <a href="#">Ver Perfil</a>
-                            </li>
                             <li>
                                 <a href="<?=getPublic();?>/recetas/subireceta">Subir Receta</a>
                             </li>
                             <li>
-                                <a href="#">Configuraciones</a>
+                                <a href="<?=getPublic();?>/recetas/lista">Mis Recetas</a>
                             </li>
+                           
                             <li>
                                 <a href="<?=getPublic();?>/usuarios/logout">Cerrar sesion</a>
                             </li>
+                   
                         </ul>
                     </li>
-                        </ul>
-                    </li>
-                </ul>
+                     <li>
             </div>
             <!-- /.navbar-collapse -->
         </div>

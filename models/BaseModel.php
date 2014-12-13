@@ -70,14 +70,19 @@ class BaseModel{
 		$array_values = array();
 		$query_values = array();
 		foreach($this->fields as $key=>$value){			
-			//array_push($array_values, $this->data[$key]);
-			array_push($array_values, $this->$key);
+			if(isset($this->$key)){
+				array_push($array_values, $this->$key );	
+			}else{
+				array_push($array_values, NULL );
+			}
+			
 			array_push($query_values, '?');
 		}		
 		
 		$query_values = implode(",",$query_values);			
 		$query="INSERT INTO ".$this->table." (".$query_fields.") VALUES (".$query_values.")";
-		$mysql->execute($query,$array_values);	
+		$mysql->execute($query,$array_values);
+
 	}
 
 	public function update(){		
@@ -97,7 +102,7 @@ class BaseModel{
 
 		$query_values = implode(",",$query_values);			
 		$query="UPDATE ".$this->table." SET ".$query_values." WHERE id=?";
-		$mysql->execute($query,$array_values);		
+		$mysql->execute($query,$array_values);
 
 	}	
 

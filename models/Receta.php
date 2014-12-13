@@ -12,10 +12,10 @@ class Receta extends BaseModel{
 		'porciones'  => 'required',
 		'tiempo_preparacion'  => '',
 		'tiempo_coccion'  => '',
-		'foto'  => '',
 		'ingredientes'  => 'required',
 		'instrucciones'  => '',
 		'categorias_id'  => 'required',
+		'foto' => ''
 	);	
 
 	protected $custom_fields = array(
